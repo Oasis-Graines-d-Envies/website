@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js" >
+<head>
+    {{ partial "head" . }}
+</head>
+<body>
+{{ partial "header" . }}
+<section>
+    <h1>{{- .Title -}}</h1>
+    <ul>
+        {{ range .Pages.ByDate.Reverse }}
+        <li>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+            {{ if and (isset .Params "image") .Params.image }}
+            {{ $image := .Resources.GetMatch .Params.image }}
+            {{ with $image }}
+            {{ $thumb := .Fill "200x200" }}
+            {{ printf `<img src="%s" alt="%s" >` $thumb.RelPermalink .Title | safeHTML }}
+            {{ end }}
+            {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</section>
+</body>
+</html>

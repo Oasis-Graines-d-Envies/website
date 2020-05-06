@@ -1,0 +1,23 @@
+<div class="post">
+    {{ if and (isset .Params "image") .Params.image }}
+    {{ $image := .Resources.GetMatch .Params.image }}
+    <a href="{{ .Permalink }}" class="thumb">
+        {{ with $image }}
+            {{ $microthumb := .Fill "100x100" }}
+            {{ $minithumb := .Fill "200x200" }}
+            {{ $thumb := .Fill "250x250" }}
+            <picture>
+                <source srcset="{{ $microthumb.RelPermalink }}" media="(max-width: 576px)">
+                <source srcset="{{ $minithumb.RelPermalink }}" media="(max-width: 768px)">
+                <source srcset="{{ $thumb.RelPermalink }}">
+                {{ printf `<img src="%s" alt="%s" >` $microthumb.RelPermalink .Title | safeHTML }}
+            </picture>
+        {{ end }}
+
+    </a>
+    {{ end }}
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <time>{{ .Date.Format "2 Jan 2006" }}</time>
+    {{ .Content | safeHTML | truncate 100 }}
+
+</div>

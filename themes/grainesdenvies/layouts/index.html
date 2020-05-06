@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js" >
+<head>
+    {{ partial "head" . }}
+</head>
+<body class="home">
+    <header>
+        <img src="{{ "images/oasis_graines_logo.svg" | relURL }}" alt="{{ .Site.Title }}" />
+    </header>
+    <section id="quick-access">
+        {{ range .Site.Menus.home }}
+        <a href="{{ .URL }}" class="{{ .Pre }}"><button class="btn--big">{{- .Name -}}</button></a>
+        {{ end }}
+    </section>
+    <section>
+        {{ .Content }}
+    </section>
+    {{ partial "menu" . }}
+</body>
+</html>

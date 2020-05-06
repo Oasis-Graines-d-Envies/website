@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    {{ partial "head" . }}
+</head>
+<body class="{{ if .Params.Body_class }}{{ .Params.Body_class }}{{ else }}t0{{ end }}">
+{{ partial "header" . }}
+<section>
+    <h1>{{- .Title -}}</h1>
+    {{ .Content }}
+    <ul class="attachments">
+        {{ range .Params.Attachments }}
+        <li class="clear">
+            <a href="{{ .src | relURL }}" title="{{- .Title -}}">{{ .desc }}</a>
+            <a href="{{ .src | relURL }}" title="{{- .Title -}}" class="file file--{{ .type }}">
+                {{ $partialPath := printf "files/%s.html" .type }}
+                {{ if fileExists ( printf "templates/partials/%s" $partialPath ) }}
+                    {{ partial $partialPath . }}
+                {{ else }}
+                    {{ partial "files/default.html" . }}
+                {{ end }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ partial "menu" . }}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js" >
+<head>
+    {{ partial "head" . }}
+</head>
+<body {{ if .Params.Body_class }}class="{{ .Params.Body_class }}"{{ end }}>
+{{ partial "header" . }}
+<section >
+    <h1>{{- .Title -}}</h1>
+    <ul class="post-list">
+        {{ range .Pages.ByDate.Reverse }}
+        <li class="clear">
+            {{ partial "post_list_item" . }}
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ partial "menu" . }}
+</body>
+</html>

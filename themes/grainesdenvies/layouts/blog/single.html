@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    {{ partial "head" . }}
+</head>
+<body class="{{ if .Params.Body_class }}{{ .Params.Body_class }}{{ else }}t0{{ end }}">
+{{ partial "header" . }}
+{{ $page := . }}
+{{ if and (isset .Params "image") .Params.image }}
+    {{ $image := .Resources.GetMatch .Params.image }}
+    {{ with $image }}
+        {{ $microthumb := .Fill "576x125 smart" }}
+        {{ $minithumb := .Fill "768x125 smart" }}
+        {{ $thumb := .Fill "1000x200 smart" }}
+        <picture>
+            <source srcset="{{ $microthumb.RelPermalink }}" media="(max-width: 576px)">
+            <source srcset="{{ $minithumb.RelPermalink }}" media="(max-width: 768px)">
+            <source srcset="{{ $thumb.RelPermalink }}">
+            {{ printf `<img src="%s" alt="%s" >` $microthumb.RelPermalink .Title | safeHTML }}
+        </picture>
+    {{ end }}
+{{ end }}
+<article>
+    <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+    {{ partial "post-meta" . }}
+    {{ .Content }}
+    <section class="gallery">
+        {{- range .Resources.ByType "image" -}}
+            {{ if ne .Name $page.Params.image }}
+                {{ $minithumb := .Fill "150x150 smart" }}
+                {{ $thumb := .Fill "250x250 smart" }}
+                {{ $big := .Resize "1200x" }}
+                <picture>
+                    <source srcset="{{ $minithumb.RelPermalink }}" media="(max-width: 768px)">
+                    <source srcset="{{ $thumb.RelPermalink }}">
+                    <a href="{{ $big.RelPermalink }}">
+                        {{ printf `<img src="%s" alt="%s" >` $minithumb.RelPermalink .Title | safeHTML }}
+                    </a>
+                </picture>
+            {{ end }}
+        {{ end }}
+    </section>
+    <a href="../" title="retour" class="return">retour</a>
+</article>
+{{ partial "menu" . }}
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- navigation -->
+<nav id="menu">
+    <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }} {{ .Pre }}">
+            <a href="{{ .URL }}" >{{ .Name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>
+<button class="nav-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+
+<script>
+    /**!
+     Navigation Button Toggle class
+     */
+    (function() {
+
+// old browser or not ?
+        if ( !('querySelector' in document && 'addEventListener' in window) ) {
+            return;
+        }
+        window.document.documentElement.className += ' js-enabled';
+
+        function toggleNav() {
+
+// Define targets by their class or id
+            var button = document.querySelector('.nav-button');
+            var target = document.querySelector('body > nav');
+
+// click-touch event
+            if ( button ) {
+                button.addEventListener('click',
+                    function (e) {
+                        button.classList.toggle('is-active');
+                        target.classList.toggle('is-opened');
+                        e.preventDefault();
+                    }, false );
+            }
+        } // end toggleNav()
+
+        toggleNav();
+    }());
+</script>
