@@ -17,6 +17,5 @@ Enfin, on a trouvé le domaine qui nous correspond !
 - de quoi loger toute la tribu sur place 
 - Le potentiel pour envisager les projets qui vont nourrir la vie collective et locale.
 
-
-Bref, un petit coin de paradis :pray:
-:crossed_fingers:
+<br>
+Bref, un petit coin de paradis :pray: :crossed_fingers:

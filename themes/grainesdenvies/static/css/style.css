@@ -2082,7 +2082,7 @@ section, article {
     max-width: 600px;
     margin: auto; }
   section ul, article ul {
-    margin-left: 2rem; }
+    margin-left: auto !important; }
 
 .home {
   height: 100%;

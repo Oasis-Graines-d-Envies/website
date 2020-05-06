@@ -25,3 +25,9 @@ menu:
 taxonomies:
   tag: "tags"
 enableEmoji: true
+markup:
+  goldmark:
+    renderer:
+      hardWraps: false
+      unsafe: false
+      xhtml: false
