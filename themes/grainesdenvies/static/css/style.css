@@ -2077,7 +2077,7 @@ section, article {
   padding: 0 2rem 2rem 2rem;
   max-width: 1000px;
   margin: auto; }
-  section p, section blockquote, article p, article blockquote {
+  section p, section blockquote, section ul, article p, article blockquote, article ul {
     width: 100%;
     max-width: 600px;
     margin: auto; }

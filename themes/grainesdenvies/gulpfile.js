@@ -1,6 +1,7 @@
 var {src,dest,series, watch} = require('gulp');
 var sass = require('gulp-sass');
-var uglifycss = require('gulp-uglifycss');
+var cssnano = require('cssnano');
+var postcss = require('gulp-postcss');
 
 function scss() {
     return src('./assets/*.scss')
@@ -9,11 +10,12 @@ function scss() {
 }
 
 function css() {
+    var plugins = [
+        cssnano(),
+    ];
     return src('./static/css/*.css')
-      .pipe(uglifycss({
-          "uglyComments": true
-          }))
-      .pipe(dest('./static/dist')); 
+        .pipe(postcss(plugins))
+        .pipe(dest('./static/dist'));
 }
 
 module.exports = {

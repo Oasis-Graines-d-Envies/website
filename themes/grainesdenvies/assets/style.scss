@@ -148,7 +148,7 @@ section,article{
   max-width: $main-column-width;
   margin: auto;
   //background: rgba(255,255,255,0.8);
-  p,blockquote{
+  p,blockquote,ul{
     width: 100%;
     max-width: 600px;
     margin: auto;
