@@ -12,13 +12,7 @@
         <li>
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
-            {{ if and (isset .Params "image") .Params.image }}
-            {{ $image := .Resources.GetMatch .Params.image }}
-            {{ with $image }}
-            {{ $thumb := .Fill "200x200" }}
-            {{ printf `<img src="%s" alt="%s" >` $thumb.RelPermalink .Title | safeHTML }}
-            {{ end }}
-            {{ end }}
+            {{ .Content | safeHTML | truncate 100 }}
         </li>
         {{ end }}
     </ul>
