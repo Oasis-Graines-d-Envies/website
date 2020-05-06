@@ -11,7 +11,7 @@
     {{ with $image }}
         {{ $microthumb := .Fill "576x125 smart" }}
         {{ $minithumb := .Fill "768x125 smart" }}
-        {{ $thumb := .Fill "1000x200 smart" }}
+        {{ $thumb := .Fill "1200x240 smart" }}
         <picture>
             <source srcset="{{ $microthumb.RelPermalink }}" media="(max-width: 576px)">
             <source srcset="{{ $minithumb.RelPermalink }}" media="(max-width: 768px)">
@@ -23,7 +23,9 @@
 <article>
     <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
     {{ partial "post-meta" . }}
-    {{ .Content }}
+    <div class="content">
+        {{ .Content }}
+    </div>
     <section class="gallery">
         {{- range .Resources.ByType "image" -}}
             {{ if ne .Name $page.Params.image }}

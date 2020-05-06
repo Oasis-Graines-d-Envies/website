@@ -229,7 +229,7 @@ $burger-weight            : 1px !default; // size of stripes
 $burger-padding           : 0 !default;
 
 //oasis
-$main-column-width : 1000px;
+$main-column-width : $extra-large;
 $text-transforme-headings: uppercase !default;
 $theme-list: (
                 (t0, $gray-900, 'ombel_bw.png'),

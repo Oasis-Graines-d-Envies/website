@@ -7,7 +7,9 @@
 {{ partial "header" . }}
 <section>
     <h1>{{- .Title -}}</h1>
-    {{ .Content }}
+    <div class="content">
+        {{ .Content }}
+    </div>
     <ul class="attachments">
         {{ range .Params.Attachments }}
         <li class="clear">

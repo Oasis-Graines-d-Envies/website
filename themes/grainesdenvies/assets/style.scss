@@ -145,27 +145,56 @@ header{
 section,article{
   width: 100%;
   padding: 0 $spacer-medium $spacer-medium $spacer-medium;
+  @include respond-to("extra-large-up") {
+    padding: 0;
+  }
   max-width: $main-column-width;
   margin: auto;
-  //background: rgba(255,255,255,0.8);
-  p,blockquote,ul{
+  .content{
     width: 100%;
     max-width: 600px;
     margin: auto;
   }
 }
-.home{
+body.home{
+  min-height: 100%;
   header{
     img{
       max-width: 360px;
     }
   }
   height: 100%;
-  background-image: url(/images/bg/apple_bw_s.png),url(/images/bg/mure_ronce_bw_s.png);
-  background-repeat: no-repeat;
-  background-position-x: right 0,left 0;
-  background-position-y: bottom 10rem,bottom 2rem;
-  background-size: 200px,200px;
+
+  background-size: 200px;
+  &:after,
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url(/images/bg/mure_ronce_bw_s.png);
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 200px;
+  }
+  &:after{
+    background-image: url(/images/bg/apple_bw_s.png);
+    background-position-x: right;
+    background-position-y: bottom;
+    bottom: 90px;
+  }
+  @include respond-to("medium-up") {
+    &:after{
+      background-size: 300px;
+    }
+    &:before{
+      background-size: 279px;
+    }
+  }
 }
 
 
@@ -333,6 +362,7 @@ a.return{
   font-size: 1.4rem;
   &:before{
     content: '←';
+    margin-right: $spacer-small;
   }
   float: right;
 }
