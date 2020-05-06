@@ -1,0 +1,27 @@
+baseURL: /
+title: "Oasis Graines d'envies"
+defaultContentLanguage: fr
+languages:
+  fr:
+    lang: fr
+    languageName: Français
+    weight: 1
+MetaDataFormat: "yaml"
+params:
+  DateFormat: "02 January 2006"
+theme: "grainesdenvies"
+menu:
+  main:
+    - identifier: blog
+      name: "Où en sommes nous ?"
+      url: /blog/
+      weight: 30
+      pre: 'mobile-only'
+  home:
+    - name: "Où en sommes nous ?"
+      url: /blog/
+      weight: 20
+      pre: t2
+taxonomies:
+  tag: "tags"
+enableEmoji: true
