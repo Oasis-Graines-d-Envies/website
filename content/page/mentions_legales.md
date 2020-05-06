@@ -15,7 +15,7 @@ Il est hébergé par [Ikoula](https://www.ikoula.com/fr/hebergement-web) :tropic
 hébergeur Français :fr: alimenté en énergies renouvelables :leaves:.
 
 
-L'ensemble du code et du contenu est sous licence [Creative Common by SA](https://creativecommons.org/licenses/by-sa/2.0/deed.fr).
+L'ensemble du [code](https://github.com/oasisgrainesdenvies/website) et du contenu et des images est sous licence [Creative Common by SA](https://creativecommons.org/licenses/by-sa/2.0/deed.fr).
 
 
 Développé avec [hugo](https://gohugo.io/) dans une philosophie [low-tech-web](https://lowtechweb.com/).
