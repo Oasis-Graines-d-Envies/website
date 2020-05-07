@@ -1523,7 +1523,7 @@ button, .btn--primary,
   background-color: #e7e9ed;
   font-family: "Quicksand", sans-serif;
   font-size: inherit;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1; }
 
@@ -2167,13 +2167,12 @@ ul.post-list {
       max-width: 300px; }
       @media (min-width: 576px) {
         ul.post-list li .post {
-          max-width: 384px; } }
+          max-width: 512px; } }
       @media (min-width: 768px) {
         ul.post-list li .post {
           width: auto;
-          max-width: 600px; } }
+          max-width: 800px; } }
     ul.post-list li h2 {
-      font-weight: 500;
       text-transform: uppercase; }
       ul.post-list li h2 a {
         color: #333;
@@ -2181,27 +2180,29 @@ ul.post-list {
     ul.post-list li p {
       font-size: 1.2rem; }
     ul.post-list li .thumb {
-      width: 110px;
-      min-height: 110px;
+      width: 100px;
+      min-height: 100px;
+      padding: 1rem;
       max-width: 30%; }
       ul.post-list li .thumb img {
-        max-width: 90%; }
+        max-width: 100%; }
       @media (min-width: 576px) {
         ul.post-list li .thumb {
-          width: auto;
-          max-width: inherit; } }
+          width: auto; } }
       @media (min-width: 768px) {
         ul.post-list li .thumb {
-          width: auto;
-          max-width: inherit; } }
+          width: auto; } }
+    ul.post-list li .summary {
+      max-width: 70%;
+      padding: 1rem; }
     ul.post-list li:nth-child(even) {
       text-align: right;
       float: right; }
-      ul.post-list li:nth-child(even) .thumb {
+      ul.post-list li:nth-child(even) .thumb, ul.post-list li:nth-child(even) .summary {
         float: right; }
     ul.post-list li:nth-child(odd) {
       float: left; }
-      ul.post-list li:nth-child(odd) .thumb {
+      ul.post-list li:nth-child(odd) .thumb, ul.post-list li:nth-child(odd) .summary {
         float: left; }
     ul.post-list li:after {
       content: '';
@@ -2210,7 +2211,8 @@ ul.post-list {
       display: block; }
 
 article h1 {
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  font-weight: 700; }
   article h1 a {
     text-decoration: none; }
 
