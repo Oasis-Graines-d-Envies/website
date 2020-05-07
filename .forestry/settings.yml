@@ -6,12 +6,12 @@ webhook_url:
 sections:
 - type: directory
   path: content
-  label: Pages
-  create: all
-  match: "*"
+  label: Home
+  create: documents
+  match: index.md
 - type: directory
   path: content/page
-  label: Page
+  label: Pages
   create: all
   match: "**/*"
 - type: directory
