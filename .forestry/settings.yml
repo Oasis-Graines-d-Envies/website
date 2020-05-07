@@ -8,7 +8,8 @@ sections:
   path: content
   label: Home
   create: documents
-  match: _index.md
+  match: "**/*"
+  new_doc_ext: ".md"
 - type: directory
   path: content/page
   label: Pages
