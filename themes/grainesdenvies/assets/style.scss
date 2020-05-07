@@ -260,15 +260,14 @@ ul.post-list{
     .post{
       max-width: 300px;
       @include respond-to("small-up") {
-        max-width: $medium / 2;
+        max-width: $medium * 2 / 3;
       }
       @include respond-to("medium-up") {
         width: auto;
-        max-width: $main-column-width / 2;
+        max-width: $main-column-width * 2 / 3;
       }
     }
     h2{
-      font-weight: $weight-medium;
       text-transform: uppercase;
       a{
         color: $gray-800;
@@ -279,31 +278,34 @@ ul.post-list{
       font-size: 1.2rem;
     }
     .thumb{
-      width: 110px;
-      min-height: 110px;
+      width: 100px;
+      min-height: 100px;
+      padding: $spacer-small;
       max-width: 30%;
       img{
-        max-width: 90%;
+        max-width: 100%;
       }
       @include respond-to("small-up") {
         width: auto;
-        max-width: inherit;
       }
       @include respond-to("medium-up") {
         width: auto;
-        max-width: inherit;
       }
+    }
+    .summary{
+      max-width: 70%;
+      padding: $spacer-small;
     }
     &:nth-child(even) {
       text-align: right;
       float: right;
-      .thumb{
+      .thumb,.summary{
         float: right;
       }
     }
     &:nth-child(odd) {
       float: left;
-      .thumb{
+      .thumb,.summary{
         float: left;
       }
     }
@@ -319,6 +321,7 @@ ul.post-list{
 article{
   h1{
     padding-top: $spacer-small;
+    font-weight: $weight-bold;
     a{
       text-decoration: none;
     }

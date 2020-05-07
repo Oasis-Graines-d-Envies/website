@@ -16,8 +16,9 @@
 
     </a>
     {{ end }}
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <time>{{ .Date.Format "2 Jan 2006" }}</time>
-    {{ .Content | safeHTML | truncate 100 }}
-
+    <div class="summary">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <time>{{ .Date.Format "2 Jan 2006" }}</time>
+        {{ .Content | safeHTML | truncate 140 }}
+    </div>
 </div>
