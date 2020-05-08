@@ -2008,7 +2008,7 @@ a.t0 > button, button.t0 {
 
 body.t0 {
   padding-bottom: 250px;
-  background-image: url("/images/bg/ombel_bw.png");
+  background-image: url("/images/bg/ombel_bw_s.png");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: bottom; }
@@ -2100,7 +2100,7 @@ a.t404 > button, button.t404 {
 
 body.t404 {
   padding-bottom: 250px;
-  background-image: url("/images/bg/rgorge_bw.png");
+  background-image: url("/images/bg/owl_bw_s.png");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: bottom; }

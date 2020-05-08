@@ -230,11 +230,12 @@ $burger-padding           : 0 !default;
 
 //oasis
 $main-column-width : $extra-large;
-$text-transforme-headings: uppercase !default;
+$text-transform-headings: uppercase !default;
+
 $theme-list: (
-                (t0, $gray-900, 'ombel_bw.png'),
+                (t0, $gray-900, 'ombel_bw_s.png'),
                 (t1, $blue-500, 'artichaud_bw_s.png'),
                 (t2, $red-500, 'carrot_bw_s.png'),
                 (t3, $orange-500, 'corn_bw_s.png'),
-                (t404, $blue-500, 'rgorge_bw.png'),
+                (t404, $blue-500, 'owl_bw_s.png'),
 );
