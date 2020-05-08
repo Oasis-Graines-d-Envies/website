@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js" >
+<head>
+    {{ partial "head" . }}
+</head>
+<body class="t404">
+{{ partial "header" . }}
+<section>
+    <h1>Oups, cette page n'existe pas.</h1>
+    <br>
+    <blockquote>Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir, mais de le rendre possible.</blockquote>
+    <i>Antoine de Saint-Exupéry</i>
+    <br>
+    <br>
+    <section id="quick-access">
+        {{ range .Site.Menus.home }}
+        <a href="{{ .URL }}" class="{{ .Pre }}"><button class="btn--big">{{- .Name -}}</button></a>
+        {{ end }}
+    </section>
+</section>
+{{ partial "menu" . }}
+{{ partial "footer" . }}
+</body>
+</html>

@@ -125,6 +125,10 @@ body,html{
       color: $white;
     }
   }
+  a.#{$theme-name} > button,button.#{$theme-name}{
+    background: $color !important;
+    color: $white !important;
+  }
 
   body.#{$theme-name}{
     padding-bottom: 250px;

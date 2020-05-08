@@ -2002,6 +2002,10 @@ body, html {
     background: #212529;
     color: #fff; }
 
+a.t0 > button, button.t0 {
+  background: #212529 !important;
+  color: #fff !important; }
+
 body.t0 {
   padding-bottom: 250px;
   background-image: url("/images/bg/ombel_bw.png");
@@ -2020,6 +2024,10 @@ body.t0 {
   .t1 button {
     background: #245268;
     color: #fff; }
+
+a.t1 > button, button.t1 {
+  background: #245268 !important;
+  color: #fff !important; }
 
 body.t1 {
   padding-bottom: 250px;
@@ -2040,6 +2048,10 @@ body.t1 {
     background: #DB5843;
     color: #fff; }
 
+a.t2 > button, button.t2 {
+  background: #DB5843 !important;
+  color: #fff !important; }
+
 body.t2 {
   padding-bottom: 250px;
   background-image: url("/images/bg/carrot_bw_s.png");
@@ -2059,9 +2071,36 @@ body.t2 {
     background: #E6955D;
     color: #fff; }
 
+a.t3 > button, button.t3 {
+  background: #E6955D !important;
+  color: #fff !important; }
+
 body.t3 {
   padding-bottom: 250px;
   background-image: url("/images/bg/corn_bw_s.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom; }
+
+.t404 {
+  background-image: #245268; }
+  .t404 h1 {
+    color: #245268; }
+  .t404 a:not(.btn) {
+    color: #245268; }
+  .t404 svg .to_fill {
+    fill: #245268; }
+  .t404 button {
+    background: #245268;
+    color: #fff; }
+
+a.t404 > button, button.t404 {
+  background: #245268 !important;
+  color: #fff !important; }
+
+body.t404 {
+  padding-bottom: 250px;
+  background-image: url("/images/bg/rgorge_bw.png");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: bottom; }

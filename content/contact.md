@@ -1,8 +1,9 @@
 ---
-title: Contact
+title: Contactez-nous
 type: page
 menu:
   main:
+    name: Contact
     weight: 99
 ---
 
