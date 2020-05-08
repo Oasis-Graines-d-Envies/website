@@ -4,11 +4,18 @@ var cssnano = require('cssnano');
 var postcss = require('gulp-postcss');
 var concatCss = require('gulp-concat-css');
 var comments = require('postcss-discard-comments');
+var minify = require('gulp-minify');
 
 function scss() {
     return src('./assets/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(dest('./static/css')); 
+}
+
+function js() {
+    return src('./static/js/*.js')
+        .pipe(minify({noSource:true}))
+        .pipe(dest('./static/dist/'));
 }
 
 function css() {
@@ -23,10 +30,11 @@ function css() {
 }
 
 module.exports = {
-    default: series(scss,css),
+    default: series(scss,css,js),
     watch: watcher
 }
 
 function watcher() {
      watch('./assets/**/*.scss', series(scss,css));
+     watch('./static/js/*.js', js);
 }
