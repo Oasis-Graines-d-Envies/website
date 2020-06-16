@@ -20,4 +20,4 @@ L'ensemble du [code](https://github.com/oasisgrainesdenvies/website), du contenu
 
 Développé avec [hugo](https://gohugo.io/) dans une philosophie [low-tech-web](https://lowtechweb.com/).
 
-1 : Tous les cookies aux chocolat :chocolate: <s>dévoré</s> dégusté pendant le développement ne sont pas comptés.
+<small>1 : Tous les cookies aux chocolat :chocolate_bar: <s>dévorés</s> dégustés pendant le développement ne sont pas comptés ici.</small>
