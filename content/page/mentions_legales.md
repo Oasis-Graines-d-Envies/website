@@ -7,7 +7,7 @@ menu:
 ---
 
 Ce site est édité par Ga&euml;tan Janssens, membre actif du collectif Oasis Graines d'Envies.
-Il n'utilise aucun cookie :cookie: et ne récolte aucune donnée personnelle.
+Il n'utilise aucun cookie<sup>1</sup> :cookie: et ne récolte aucune donnée personnelle.
 <br>
 <br>
 
@@ -19,3 +19,5 @@ L'ensemble du [code](https://github.com/oasisgrainesdenvies/website), du contenu
 
 
 Développé avec [hugo](https://gohugo.io/) dans une philosophie [low-tech-web](https://lowtechweb.com/).
+
+1 : Tous les cookies aux chocolat :chocolate: <s>dévoré</s> dégusté pendant le développement ne sont pas comptés.
