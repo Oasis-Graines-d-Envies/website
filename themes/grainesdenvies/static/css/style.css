@@ -1904,6 +1904,9 @@ body, html {
   width: 100%;
   min-height: 100%; }
 
+h2, h3 {
+  text-transform: uppercase; }
+
 #menu {
   display: none;
   position: fixed;

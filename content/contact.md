@@ -20,3 +20,8 @@ Inscrivez vous à notre newsletter pour recevoir des paniers de nouvelles fraich
          <p><input type="submit" value="C'est parti !" /></p>
      </div>
  </form>
+ <br>
+ <h2>Nos partenaires </h2>
+<a href="https://cooperative-oasis.org/">
+ <img src="/images/oasis-reseau.svg" width="250px">
+</a>
