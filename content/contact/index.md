@@ -21,7 +21,9 @@ Inscrivez vous à notre newsletter pour recevoir des paniers de nouvelles fraich
      </div>
  </form>
  <br>
+ <br>
  <h2>Nos partenaires </h2>
-<a href="https://cooperative-oasis.org/">
- <img src="/images/oasis-reseau.svg" width="250px">
-</a>
+ <div class="gallery">
+    <a href="https://cooperative-oasis.org/"><img src="oasis-reseau.svg" alt="reseau oasis"></a>
+    <a href="https://www.leshabiles.org/"><img src="habiles.svg" alt="les habiles"></a>
+ </div>

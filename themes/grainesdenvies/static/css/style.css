@@ -2293,3 +2293,6 @@ a.return {
   a.return:before {
     content: '←';
     margin-right: 1rem; }
+
+.gallery img {
+  height: 150px; }
