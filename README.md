@@ -2,6 +2,14 @@
 ## source du site web
 https://oasisgrainesdenvies.org/
 
-- hugo
+- [hugo](https://gohugo.io/)
 - [knacss](https://www.knacss.com/)
-- gulp
+- [gulp](https://gulpjs.com/)
+
+## How to develop
+
+On root directory
+- `hugo server --watch --verbose`
+
+On theme dir
+- `gulp watch`
