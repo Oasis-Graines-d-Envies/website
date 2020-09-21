@@ -17,10 +17,9 @@ attachments:
       type: pdf
 ---
 
-Notre éco-lieu pourra accueillir 11 foyers à l’année. 
-Nous sommes actuellement 6 foyers habitants. 
-5 familles ayant suivi notre processus d’inclusion pourront donc, si elles le souhaitent, se joindre au 
+Si un logement devenait vacant, notre éco-lieu pourrait accueillir un nouveau foyer. 
+Des personnes ayant suivi notre processus d’inclusion pourront alors, si elles le souhaitent, se joindre au 
 collectif. 
 Cette démarche est décrite dans le document ci-joint.
 
-⚠️ Le groupe n'accueil plus de nouveau butineur pour le moment.
+⚠️ Le groupe n'accueille pas de nouveaux butineurs pour le moment.
