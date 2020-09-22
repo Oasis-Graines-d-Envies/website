@@ -9,9 +9,9 @@
 {{ if and (isset .Params "image") .Params.image }}
     {{ $image := .Resources.GetMatch .Params.image }}
     {{ with $image }}
-        {{ $microthumb := .Fill "576x125 smart" }}
-        {{ $minithumb := .Fill "768x125 smart" }}
-        {{ $thumb := .Fill "1200x240 smart" }}
+        {{ $microthumb := .Fill "576x125 center" }}
+        {{ $minithumb := .Fill "768x125 center" }}
+        {{ $thumb := .Fill "1200x240 center" }}
         <picture>
             <source srcset="{{ $microthumb.RelPermalink }}" media="(max-width: 576px)">
             <source srcset="{{ $minithumb.RelPermalink }}" media="(max-width: 768px)">
