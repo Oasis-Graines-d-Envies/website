@@ -11,7 +11,7 @@ Quelle émotion ! Après plusieurs semaines d'échanges et de doutes,
 nous sommes très heureux d'avoir enfin signé un compromis !
 
 C'est donc avec beaucoup de joie que l'on vous présente officiellement notre trouvaille :
-Elle est située sur la Commune de Saint-Geoire-en-Valdaine, à 20 min de Voiron en Isère.
+Elle est située en Valdaine, à 20 min de Voiron en Isère.
 Ce territoire rural correspond parfaitement aux aspirations du groupe : garder un pied à Grenoble (40min),
 vivre dans un environnement naturel préservé, habiter une commune avec laquelle développer des synergies 
 (commerces, écoles, associations, animations, ...)
